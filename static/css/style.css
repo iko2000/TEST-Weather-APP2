@@ -1,0 +1,186 @@
+@font-face {
+  font-family: Popins;
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: nonse;
+  src: url("../fonts/SFAlienEncountersSolid.ttf");
+}
+
+body {
+  background-image: url("../imgs/android_weather_app.webp");
+}
+nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-size: 30px;
+  font-family: nonse;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#present {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 40%;
+  height: 80%;
+}
+
+.city {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  height: 20%;
+  background-image: url("../imgs/city.jpg");
+  opacity: 0;
+  transition: 1s;
+}
+
+.temp {
+  width: 100%;
+  height: 20%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imgs/wind.jpg");
+  opacity: 0;
+  transition: 2s;
+}
+
+.wind {
+  width: 100%;
+  height: 20%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imgs/wind.jpg");
+  opacity: 0;
+  transition: 3.5s;
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  gap: 5%;
+  border: 0.5px dotted black;
+  border-radius: 10%;
+  font-family: nonse;
+}
+#search-img {
+  width: 30px;
+  height: 28px;
+}
+button {
+  border-radius: 30%;
+  border: none;
+  padding: 0%;
+  cursor: pointer;
+}
+::placeholder {
+  color: red;
+  font-family: Popins;
+}
+input {
+  font-family: Popins;
+}
+
+#city-d {
+  font-size: 40px;
+  color: black;
+  font-family: nonse;
+}
+
+#temp-d {
+  font-size: 30px;
+  font-family: Popins;
+}
+
+#wind-d {
+  font-size: 30px;
+  font-family: Popins;
+  color: red;
+}
+
+.des {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: nonse;
+  height: 20%;
+  opacity: 0;
+  transition: 5s;
+}
+
+.visible {
+  opacity: 1;
+}
+.sunny {
+  background-image: url("../imgs/sunny.jpg");
+  width: 100%;
+  height: 20%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 2s;
+}
+.cold {
+  background-image: url("../imgs/freezing.jpg");
+  width: 100%;
+  height: 20%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: 2s;
+}
+@media only screen and (max-width: 700px) {
+  .box {
+    width: 100%;
+  }
+  #wind-d {
+    font-size: 20px;
+  }
+  #temp-d {
+    font-size: 20px;
+  }
+  #ciry-d {
+    font-size: 25px;
+  }
+  .search-box {
+    gap: 10px;
+    font-size: 13px;
+  }
+}
